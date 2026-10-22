@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "guiscaleplus",
+  "version": "${version}",
+  "name": "GUI Scale Plus",
+  "description": "Eigene GUI-Größe für Inventar, Container und andere Menüs – kleine Hotbar, großes Inventar.",
+  "authors": ["du"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.guiscaleplus.GuiScalePlusClient"]
+  },
+  "mixins": ["guiscaleplus.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
