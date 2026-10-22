@@ -27,7 +27,7 @@ public abstract class MinecraftClientMixin {
         int target = GuiScaleManager.targetScale(mc, mc.currentScreen);
         if ((int) w.getScaleFactor() != target) {
             w.setScaleFactor(target);
-            mc.currentScreen.resize(mc, w.getScaledWidth(), w.getScaledHeight());
+               mc.currentScreen.resize(w.getScaledWidth(), w.getScaledHeight());
         }
     }
 }
